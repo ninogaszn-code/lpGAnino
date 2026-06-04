@@ -119,6 +119,17 @@ img,svg{display:block;max-width:100%}
 .hero-strip div{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:#fff}
 .hero-strip .ic{width:30px;height:30px;border-radius:9px;background:rgba(255,255,255,.15);color:#fff;display:grid;place-items:center;flex:0 0 auto}
 .hero-strip .ic svg{width:17px;height:17px;stroke:#fff}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:30px;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.25fr .82fr;gap:42px}}
+.bairros-card{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.24);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:18px;padding:22px 24px;box-shadow:0 20px 44px -20px rgba(3,18,42,.6)}
+.bairros-card h3{display:flex;align-items:center;gap:11px;font-family:"Bricolage Grotesque";font-size:19px;font-weight:800;color:#fff;margin-bottom:5px}
+.bairros-card h3 .pin{width:36px;height:36px;border-radius:10px;background:rgba(15,181,216,.25);display:grid;place-items:center;flex:0 0 auto}
+.bairros-card h3 .pin svg{width:20px;height:20px;stroke:#5fe0f5;fill:none}
+.bairros-card .sub{color:rgba(255,255,255,.82);font-size:13px;font-weight:500;margin-bottom:16px}
+.bairros-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
+.bairros-list li{display:flex;align-items:center;gap:8px;color:#fff;font-size:13.8px;font-weight:600;line-height:1.25}
+.bairros-list li svg{width:16px;height:16px;flex:0 0 auto;stroke:#39d0ee;fill:none}
+@media(max-width:430px){.bairros-list{grid-template-columns:1fr}}
 
 /* ---------- PRODUTOS ---------- */
 .sec{padding:46px 0}
@@ -331,6 +342,8 @@ footer a:hover{color:#fff}
 <!-- HERO -->
 <section class="hero" id="topo">
 <div class="wrap">
+<div class="hero-grid">
+<div class="hero-left">
 <span class="eyebrow reveal d1"><span class="dot"></span> Entrega rápida e segura</span>
 <h1 class="reveal d2"><span class="g">Entrega de Gás</span> na sua porta, com qualidade e confiança.</h1>
 <p class="lead reveal d3">Botijão de gás 13kg com entrega rápida na Vila Jardim e região. Peça agora pelo WhatsApp. Pagamento na entrega.</p>
@@ -339,6 +352,26 @@ footer a:hover{color:#fff}
 <svg fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
         Pedir Gás 13kg
       </button>
+</div>
+</div>
+<aside class="hero-right reveal d3">
+<div class="bairros-card">
+<h3><span class="pin"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>Bairros que atendemos</h3>
+<p class="sub">Entrega rápida em toda a Zona Norte de Porto Alegre</p>
+<ul class="bairros-list">
+<li><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg>Vila Jardim</li>
+<li><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg>Três Figueiras</li>
+<li><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg>Chácara das Pedras</li>
+<li><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg>Jardim Sabará</li>
+<li><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg>Jardim Itu</li>
+<li><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg>Vila Ipiranga</li>
+<li><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg>Jardim Europa</li>
+<li><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg>Cristo Redentor</li>
+<li><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg>Passo D'Areia</li>
+<li><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg>Boa Vista</li>
+</ul>
+</div>
+</aside>
 </div>
 <div class="hero-strip reveal d4">
 <div><span class="ic"><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></svg></span> Qualidade no atendimento</div>
@@ -553,15 +586,11 @@ function abrirZap(msg){
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ "event": "clique_whatsapp", "produto": produto });
 
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18192014924"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18192014924');
-</script>
+  /* Alternativa sem GTM (gtag direto): descomente e ponha seu ID
+  // if (typeof gtag === "function") {
+  //   gtag('event', 'conversion', { 'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXXXXXX' });
+  // }
+  */
 
   window.open(url, "_blank");
 }
