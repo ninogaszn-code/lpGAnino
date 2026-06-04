@@ -553,11 +553,15 @@ function abrirZap(msg){
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ "event": "clique_whatsapp", "produto": produto });
 
-  /* Alternativa sem GTM (gtag direto): descomente e ponha seu ID
-  // if (typeof gtag === "function") {
-  //   gtag('event', 'conversion', { 'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXXXXXX' });
-  // }
-  */
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18192014924"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18192014924');
+</script>
 
   window.open(url, "_blank");
 }
